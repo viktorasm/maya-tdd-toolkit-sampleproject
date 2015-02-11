@@ -22,7 +22,7 @@ A special file that will need to be introduced at the root test package; test ru
 
 ## testMayaLaunchEnvironment
 
-When maya gets launched, a copy of this folder will be created to be used as Maya home dir. Don't version-control the copy,
-but keep a copy of this one, and update as needed to have Maya configured just the way you want it for tests. In this projects case, we've just disabled all plugins, for example. 
+When Maya gets launched, a copy of this folder will be created to be used as Maya home dir. Don't version-control the copy,
+but definitely include this one, and update as needed to have Maya configured just the way you want it for tests. In this project's case, we've disabled all plugins. 
 
 The folder now only contains a setup for 2015 maya, should be enough to illustrate idea.
