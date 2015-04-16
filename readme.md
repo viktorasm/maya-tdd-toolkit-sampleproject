@@ -2,19 +2,22 @@
 
 This is a sample project that is using [maya-tdd-toolkit](https://github.com/viktorasm/maya-tdd-toolkit) for running tests inside Maya.
 
+## how it works
+
+It's pretty simple. Once Maya is launched, it starts listening for test launches.
+While external test runner is running tests, they are instead instanced inside Maya and executed there; test result
+is translated back to original test runner.
+
 ## basic setup
+
 Once everything is working, the workflow is like this:
 
 * Launch Maya with `./launch_maya.py` (preferably from your IDE, so you can get the output in there)
-* Launch tests with `./launch_tests.py` (also from IDE)
+* Launch tests like usual from IDE.
 
 ## launch_maya.py
 
 This file is where you configure how to tailor Maya configuration to running tests in your project.
-
-## launch_tests.py
-
-Just a shortcut in your project to understand how to launch test suite.
 
 ## sampleproject_tests/setup.py
 

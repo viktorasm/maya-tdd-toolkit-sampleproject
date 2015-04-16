@@ -1,6 +1,10 @@
 import unittest
-from maya import cmds
+from sampleproject_tests.setup import mayaTest
+from mayatdd.mayatest import insideMaya
+if insideMaya:
+    from maya import cmds
 
+@mayaTest
 class Test(unittest.TestCase):
     def testMinimal(self):
         '''

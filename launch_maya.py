@@ -7,10 +7,8 @@ projectRoot = path.dirname(__file__)
 launcher = Launcher()
 launcher.mayaEnvTemplateDir = projectRoot+'/testMayaLaunchEnvironment'
 
-# configure python path; for our project, we need to add root folder of this project
-# depending on what kind of project layout you have, or what kind of libraries you use,
-# you might need more entries here 
-launcher.pythonPath.append(projectRoot)
+# configure startup python path;
+
 # you'll need to have dccautomation project checked out somewhere,
 # for me it's just outside my workspace (
 launcher.pythonPath.append(path.abspath(projectRoot+r'/../../dccautomation'))
