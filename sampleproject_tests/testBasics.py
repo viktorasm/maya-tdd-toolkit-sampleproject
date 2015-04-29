@@ -10,6 +10,7 @@ class Test(unittest.TestCase):
         '''
         do something with maya.cmds to prove we're actually running this test in Maya.
         '''
+        print "running in maya!"
         cmds.sphere()
         
 

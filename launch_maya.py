@@ -5,7 +5,7 @@ from os import path
 projectRoot = path.dirname(__file__)
 
 launcher = Launcher()
-launcher.mayaEnvTemplateDir = projectRoot+'/testMayaLaunchEnvironment'
+launcher.mayaEnvTemplateDir = path.abspath(path.join(projectRoot,'testMayaLaunchEnvironment'))
 
 # specific options for windows?
 if launcher.isWindows:
