@@ -10,18 +10,45 @@ is translated back to original test runner.
 
 ## basic setup
 
-Once everything is working, the workflow is like this:
+Once everything is working, the workflow will be like this:
 
 * Launch Maya with `./launch_maya.py` (preferably from your IDE, so you can get the output in there)
-* Launch tests like usual from IDE.
+* Launch tests like usual from IDE or command line
+
+## quick start
+
+Clone project, setup virtual environment and install all required libs:
+
+```bash
+git clone https://github.com/viktorasm/maya-tdd-toolkit-sampleproject.git
+cd maya-tdd-toolkit-sampleproject
+virtualenv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+Server: launch maya and wait while it finishes initializing (or run the equivalend command in your IDE)
+
+```bash
+python launch_maya.py
+```
+
+Run tests:
+
+```bash
+nose -v
+```
+
+
+
 
 ## launch_maya.py
 
 This file is where you configure how to tailor Maya configuration to running tests in your project.
 
-## sampleproject_tests/setup.py
+## sampleproject_tests/__init__.py
 
-A special file that will need to be introduced at the root test package; test runner requires slight configuration, so it's automagically discovered in that file.
+See details of this file - some options need to be tailored for your project, along with optional startup hooks.
 
 ## testMayaLaunchEnvironment
 

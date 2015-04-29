@@ -1,5 +1,5 @@
 import unittest
-from sampleproject_tests.setup import mayaTest
+from sampleproject_tests import mayaTest
 from mayatdd.mayatest import insideMaya
 if insideMaya:
     from maya import cmds

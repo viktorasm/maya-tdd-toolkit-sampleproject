@@ -1,0 +1,3 @@
+-e git+https://github.com/rgalanakis/dccautomation.git#egg=dccautomation
+-e git+https://github.com/viktorasm/maya-tdd-toolkit.git#egg=mayatdd
+nose==1.3.6
