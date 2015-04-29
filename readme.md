@@ -25,18 +25,10 @@ cd maya-tdd-toolkit-sampleproject
 virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
-```
-
-Server: launch maya and wait while it finishes initializing (or run the equivalend command in your IDE)
-
-```bash
-python launch_maya.py
-```
-
-Run tests:
-
-```bash
-nose -v
+#launch maya and wait while it finishes initializing (or run the equivalend command in your IDE)
+venv/bin/python launch_maya.py &
+# run tests
+nosetests -v
 ```
 
 

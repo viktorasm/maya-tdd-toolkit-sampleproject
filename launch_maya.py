@@ -1,3 +1,5 @@
+#!/bin/python
+
 from mayatdd.launchMaya import Launcher
 from os import path
  
